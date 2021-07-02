@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- GA, CookieConsent, Bootstrap4.6 CDN -->
+  <!-- <script src="../../js/cookieconsent.js"></script>
+  <link rel="stylesheet" href="../../css/consent.css"> -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWFMQZ2CQB"></script> -->
+  <meta charset="UTF-8">
+  <title>01 - JS Drum Kit</title>
+  <link rel="stylesheet" href="./css/jsdrumkit.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+</head>
+
+<body>
+  <div class="warning">
+    <img class="warning" src="./assets/images/vwarn.png" alt="">
+  </div>
+  <div class="help">
+    <span class="helptext"> Press the corresponding key on your keyboard or click on the button to play the
+      sound.</span>
+  </div>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <span class="sound">clap</span>
+      <kbd>A</kbd>
+    </div>
+    <div data-key="83" class="key">
+      <span class="sound">hihat</span>
+      <kbd>S</kbd>
+    </div>
+    <div data-key="68" class="key">
+      <span class="sound">kick</span>
+      <kbd>D</kbd>
+    </div>
+    <div data-key="70" class="key">
+      <span class="sound">openhat</span>
+      <kbd>F</kbd>
+    </div>
+    <div data-key="71" class="key">
+      <span class="sound">boom</span>
+      <kbd>G</kbd>
+    </div>
+    <div data-key="72" class="key">
+      <span class="sound">ride</span>
+      <kbd>H</kbd>
+    </div>
+    <div data-key="74" class="key">
+      <span class="sound">snare</span>
+      <kbd>J</kbd>
+    </div>
+    <div data-key="75" class="key">
+      <span class="sound">tom</span>
+      <kbd>K</kbd>
+    </div>
+    <div data-key="76" class="key">
+      <span class="sound">tink</span>
+      <kbd>L</kbd>
+    </div>
+  </div>
+
+  <audio data-key="65" src="./assets/audio/clap.wav"></audio>
+  <audio data-key="83" src="./assets/audio/hihat.wav"></audio>
+  <audio data-key="68" src="./assets/audio/kick.wav"></audio>
+  <audio data-key="70" src="./assets/audio/openhat.wav"></audio>
+  <audio data-key="71" src="./assets/audio/boom.wav"></audio>
+  <audio data-key="72" src="./assets/audio/ride.wav"></audio>
+  <audio data-key="74" src="./assets/audio/snare.wav"></audio>
+  <audio data-key="75" src="./assets/audio/tom.wav"></audio>
+  <audio data-key="76" src="./assets/audio/tink.wav"></audio>
+
+  <div id="consent-popup" class="hidden">
+    <p>We use cookies to analyze traffic and store your preferences.
+      <div><a id='consent-accept' class="btn btn-success btn-sm">Ok, got it!</a></div>
+    </p>
+  </div>
+  <script src="./js/jsdrumkit.js"></script>
+</body>
+
+</html>
