@@ -41,7 +41,6 @@
       timerDisplayHr.innerHTML = hrs < 10 ? `0${hrs}:` : `${hrs}:`
       timerDisplayMn.innerHTML = mins < 10 ? `0${mins}:` : `${mins}:`
       timerDisplaySc.innerHTML = secs < 10 ? `0${secs}` : `${secs}`
-      debugger
       document.title =
         `${ hrs < 10 ? `0${hrs}:` : `${hrs}:`}${mins < 10 ? `0${mins}:` : `${mins}:`}${secs < 10 ? `0${secs}` : `${secs}`}`
     };
